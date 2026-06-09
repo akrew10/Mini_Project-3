@@ -8,7 +8,26 @@ This tutorial demonstrates how to interface an Inertial Measurement Unit (IMU) w
 
 ---
 
-# Intro Concept / Theory
+
+
+## Course Concepts
+
+This project applies concepts from ECE 35 (Introduction to Analog Design)
+and Physics 2A involving vectors and motion analysis.
+
+The accelerometer measures acceleration along three orthogonal axes.
+
+To determine overall motion, the vector magnitude is calculated using:
+
+Acceleration Magnitude = √(ax² + ay² + az²)
+
+This equation comes directly from the Euclidean distance formula and
+the Pythagorean Theorem in three dimensions.
+
+Similarly, gyroscope measurements are combined using vector magnitude
+calculations to determine total angular velocity.
+
+
 
 An Inertial Measurement Unit (IMU) is an electronic sensor that measures motion and orientation using a combination of accelerometers and gyroscopes.
 
