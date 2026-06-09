@@ -286,37 +286,18 @@ Every environment is different, so threshold tuning may be required.
 
 Adjust thresholds to balance sensitivity and false alarms.
 
----
-
-# Example Serial Monitor Output
-
-Normal operation:
-
-```text
-[IMU 6-DoF] Linear Force: 1.02G | Jerk: 0.015G | Rotational Speed: 8.4 dps
-```
-
-Theft detection event:
-
-```text
-[THEFT ALERT] Multi-Feature Match!
-Jerk: 1.12G | Rotation: 245.3 dps
-```
-
-![Serial Output](serial_output.png)
 
 ---
 
-# Troubleshooting
+# Step 8: Testing the System
 
-| Problem              | Solution                              |
-| -------------------- | ------------------------------------- |
-| No IMU data          | Check SDA/SCL wiring                  |
-| Constant zero values | Verify sensor power and I²C address   |
-| Random readings      | Ensure a common ground connection     |
-| Too many alerts      | Increase detection thresholds         |
-| No alerts trigger    | Lower detection thresholds            |
-| Upload fails         | Close Serial Monitor before uploading |
+1. Upload the code to the ESP32.
+2. Open Serial Monitor at 115200 baud.
+3. Leave the wallet stationary and observe baseline readings.
+4. Pick up the wallet slowly and verify that no theft alert occurs.
+5. Quickly grab and rotate the wallet.
+6. Verify that a theft alert message appears in the Serial Monitor.
+7. Adjust thresholds if necessary.
 
 ---
 
@@ -357,3 +338,14 @@ The IMU subsystem works together with the BLE communication system to provide re
 * Final Project Website:
 
   * https://akrew10.github.io/ECE196_Fingerprint_Wallet/
+ 
+
+
+# AI Use Disclosure
+
+ChatGPT was used to assist with editing the writing,
+improving grammar, organizing the tutorial structure,
+and generating example diagrams for the motion detection
+flowchart. All project implementation details, code,
+testing, and technical content were developed and
+verified by the author.
