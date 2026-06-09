@@ -172,7 +172,6 @@ These settings configure:
 * 104 Hz Output Data Rate
 * ±500 Degrees/Second Measurement Range
 
-![Initialization](initialization.png)
 
 ---
 
@@ -287,9 +286,6 @@ Requiring both conditions helps eliminate false positives caused by:
 * Vibrations
 * Normal handling
 * Nearby movement
-
-![Detection Flow](detection_flow.png)
-
 ---
 
 # Motion Calibration
