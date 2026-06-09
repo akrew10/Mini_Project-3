@@ -26,7 +26,7 @@ A 6-DoF IMU contains:
 
 Together, these sensors provide a complete picture of how an object moves in space.
 
-![IMU Diagram](imu_diagram.png)
+![IMU Diagram](imu_diagram.jpg)
 
 ## Accelerometer
 
