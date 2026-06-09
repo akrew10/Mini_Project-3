@@ -47,6 +47,8 @@ Together, these sensors provide a complete picture of how an object moves in spa
 
 ![IMU Diagram](imu_diagram.jpg)
 
+![IMU Block Diagram](imu_block_diagram.png)
+
 ## Accelerometer
 
 The accelerometer measures forces acting on the device.
